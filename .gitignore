@@ -3,9 +3,10 @@
 **.txt
 !*.java
 
-/*/.git/
-/*/.idea/
-/*/.gitignore
+*/.git/
+*/.idea/
+*/.gitignore
+
 /debug-presentation/
 /java2/
 /javaCommandLine/
