@@ -1,8 +1,12 @@
-/debug-presentation
-/java2
-/javaCommandLine
-/JavaRushTasks
-/out
-/spring
-/core/*
-!/core/src/*
+# Ignore all files ending with
+**.iml
+**.txt
+
+/*/.git
+/*/.idea
+/*/.gitignore
+/debug-presentation/
+/java2/
+/javaCommandLine/
+/JavaRushTasks/
+/out/
