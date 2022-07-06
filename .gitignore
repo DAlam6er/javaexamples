@@ -1,9 +1,10 @@
 # Ignore all files ending with
 **.iml
 **.txt
+!*.java
 
-/*/.git
-/*/.idea
+/*/.git/
+/*/.idea/
 /*/.gitignore
 /debug-presentation/
 /java2/
