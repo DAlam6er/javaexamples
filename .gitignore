@@ -4,3 +4,5 @@
 /JavaRushTasks
 /out
 /spring
+/core/*
+!/core/src/*
