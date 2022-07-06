@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="0.2 1.0"
+      codebase="http://test.site"
+      href="MyApp.jnlp">
+
+    <information>
+        <title>test App</title>
+        <vendor>Wickedly Smart</vendor>
+        <homepage href="index.html"/>
+        <description>Head First WebStart demo</description>
+        <icon href="myicon.ico"/>
+        <offline-allowed/>
+    </information>
+
+    <resources>
+        <j2se version="1.8+"/>
+        <jar href="MyPackagedApp.jar"/>
+    </resources>
+
+    <application-desc main-class="com.myfirstapp.MyApplication"/>
+</jnlp>
