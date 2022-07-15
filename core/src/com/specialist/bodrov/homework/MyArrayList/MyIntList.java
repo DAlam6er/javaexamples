@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 /**
- * Resizable-array implementation of the {@code List} interface.
+ * Resizable-array implementation of the {@code ListDemo} interface.
  * Implements operations {@code add}, {@code get}, {@code size},
  * {@code remove}. This class provides methods to manipulate
  * the size of the array that is used internally to store integer values.

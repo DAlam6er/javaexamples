@@ -1,4 +1,4 @@
-package com.stepik.javabasecourse;
+package com.stepik.javabasecourse.strings;
 // Проверка на палиндром
 public class IsPalindrome
 {

@@ -1,4 +1,4 @@
-package com.stepik.javabasecourse;
+package com.stepik.javabasecourse.datatypes;
 
 // метод меняет значение одного бита заданного целого числа на противоположное
 public class FilpBit

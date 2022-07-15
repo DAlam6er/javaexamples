@@ -1,4 +1,4 @@
-package com.stepik.javabasecourse.nio;
+package com.stepik.javabasecourse.files.nio;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,6 +7,11 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 public class Demo
 {
+    // Ключевое свойство nio - неблокирующий ввод/вывод
+    // Можно из одного Thread работать сразу с несколькими каналами
+    // опрашиваем их состояние и обрабатываем данные по мере поступления
+    // т.е. можно написать программу-сервер,
+    // которая в 1 Thread'е будет обслуживать 100 клиентов
     public static void main(String[] args)
     {
         // аналог java.io.File - это java.nio.file.Path

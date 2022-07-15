@@ -16,7 +16,7 @@ public class SimpleChatClient
     JTextField outgoing;
     BufferedReader reader;
     PrintWriter writer;
-    //Socket sock;
+    //SocketDemo sock;
 
     public static void main(String[] args)
     {

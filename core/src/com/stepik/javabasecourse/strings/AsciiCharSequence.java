@@ -1,4 +1,4 @@
-package com.stepik.javabasecourse;
+package com.stepik.javabasecourse.strings;
 
 public class AsciiCharSequence implements java.lang.CharSequence {
     private final byte[] sequence;

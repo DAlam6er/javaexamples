@@ -1,4 +1,4 @@
-package com.stepik.javabasecourse;
+package com.stepik.javabasecourse.datatypes;
 // Реализуйте метод, возвращающий true, если среди четырех его аргументов
 // ровно два истинны (любые).
 // Во всех остальных случаях метод должен возвращать false.

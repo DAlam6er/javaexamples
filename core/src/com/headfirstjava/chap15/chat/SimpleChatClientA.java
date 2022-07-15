@@ -12,7 +12,7 @@ public class SimpleChatClientA
 {
     JTextField outgoing;
     PrintWriter writer;
-    //Socket sock;
+    //SocketDemo sock;
 
     // Создаем GUI и подключаем слушатель для событий к кнопке отправки
     // Вызываем метод setUpNetworking()

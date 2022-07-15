@@ -1,4 +1,4 @@
-package com.stepik.javabasecourse.io.stream;
+package com.stepik.javabasecourse.files.streams.bytestreams;
 
 import java.io.*;
 
@@ -33,6 +33,7 @@ public class Demo
     //      public int read(byte[] b, int off, int len) throws IOException {
     //          ...
     //      }
+
     // Пропускает n байт из входного потока
     // Возвращает фактическое количество байт, которое удалось пропустить (<= n)
     //      public long skip (long n) throws IOException
@@ -74,6 +75,7 @@ public class Demo
         int totalBytesWritten = 0;
         byte[] src = new byte[4096];    // источник для InputStream
         byte[] buf = new byte[1024];    // временный буфер размером 1 Кб
+        byte[] result;
         int blocksize;                  // количество прочитанных байт
         try (InputStream is = new ByteArrayInputStream(src);
              OutputStream os = new ByteArrayOutputStream())
@@ -82,6 +84,9 @@ public class Demo
                 os.write(buf, 0, blocksize);
                 System.out.println("blocksize: " + blocksize);
                 totalBytesWritten += blocksize;
+            }
+            if (os instanceof ByteArrayOutputStream) {
+                result = ((ByteArrayOutputStream) os).toByteArray();
             }
             System.out.println("Total bytes written = " + totalBytesWritten);
         } catch (IOException e) {

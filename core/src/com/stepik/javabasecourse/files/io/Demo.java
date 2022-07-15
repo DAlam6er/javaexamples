@@ -1,4 +1,4 @@
-package com.stepik.javabasecourse.io.File;
+package com.stepik.javabasecourse.files.io;
 
 import java.io.File;
 import java.io.IOException;
