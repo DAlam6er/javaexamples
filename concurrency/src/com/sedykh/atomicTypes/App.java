@@ -14,6 +14,7 @@ public class App
         th2.join();
 
         System.out.println("value = " + GlobalData.value);
+        // Атомарные типы данных содержат в себе встроенную синхронизацию
         System.out.println("atomic value = " + GlobalData.aValue.get());
     }
 }

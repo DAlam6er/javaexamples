@@ -1,9 +1,11 @@
 package com.sedykh;
 
-// при работе с SQL в Java импорты должны быть только такими: Driver, DriverManager
+// при работе с SQL в Java импорты должны быть только такими:
+// Driver, DriverManager
+
 // импорты из самого Connector запрещены!
-// DriverManager сам найдёт то что нужно, код должен быть кросс-платформенным
-// на случай смены базы данных
+// DriverManager сам найдёт то что нужно,
+// код должен быть кросс-платформенным на случай смены базы данных
 import java.sql.*;
 
 public class JDBCDemo
@@ -20,7 +22,7 @@ public class JDBCDemo
         }
         */
 
-        // 1. загрузить драйвер в память
+        // 1. ЗАГРУЗИТЬ ДРАЙВЕР В ПАМЯТЬ
         try {
             // загружаем по имени, не используя импорт
             Class.forName(DRIVER_NAME);
@@ -31,7 +33,7 @@ public class JDBCDemo
 
         // объявляем снаружи, а не в try { } чтобы иметь возможность обратиться
         Connection conn = null;
-        // 2. Подключение к серверу БД
+        // 2. ПОДКЛЮЧЕНИЕ К СЕРВЕРУ БД
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
         } catch (SQLException e) {
@@ -39,7 +41,7 @@ public class JDBCDemo
             return;
         }
 
-        // 3. Работаем с базой
+        // 3. РАБОТАЕМ С БАЗОЙ
         try {
             // получим список каталогов на сервере БД
             ResultSet rs = conn.getMetaData().getCatalogs();

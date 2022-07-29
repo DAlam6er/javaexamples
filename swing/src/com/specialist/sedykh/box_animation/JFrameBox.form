@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.specialist.sedykh.box_animation.JFrameBox">
+  <grid id="27dc6" binding="jMainPan" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="8832f" binding="jControlPan" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="etched"/>
+        <children>
+          <grid id="9c796" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="West"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="cd7e8" class="javax.swing.JButton" binding="jStartBtn">
+                <constraints/>
+                <properties>
+                  <text value="Start"/>
+                </properties>
+              </component>
+              <component id="a6460" class="javax.swing.JButton" binding="jStopBtn">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <text value="Stop"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="7b40" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="East"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="76f6b" class="javax.swing.JButton" binding="jCloseBtn">
+                <constraints/>
+                <properties>
+                  <text value="Close"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="b42ac" binding="jScenePan" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <preferredSize width="600" height="600"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <grid id="390f4" binding="jBox" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints/>
+            <properties>
+              <background color="-14290916"/>
+              <foreground color="-1372374"/>
+              <preferredSize width="30" height="30"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
