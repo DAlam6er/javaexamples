@@ -85,14 +85,26 @@ public class FindTask extends Task<Void>
         }
         updateProgress(list.size(), SIZE);
          */
-        
+
         if (files != null && items.size() < SIZE) {
             for (File f : files) {
                 if (f.isDirectory()) {
                     findIn(f);
                 } else {
-                    items.add(f.getAbsolutePath());
+                    // prints "Thread-3"
                     System.out.println(Thread.currentThread().getName());
+                    // Avoiding java.lang.IllegalStateException: Not on FX application thread
+                    // Нельзя изменять коллекцию в треде, отличном от JavaFX Application Thread
+                    Platform.runLater(new Runnable()
+                    {
+                        @Override
+                        public void run()
+                        {
+                            // prints JavaFX Application Thread
+                            System.out.println(Thread.currentThread().getName());
+                            items.add(f.getAbsolutePath());
+                        }
+                    });
                 }
             }
         }
